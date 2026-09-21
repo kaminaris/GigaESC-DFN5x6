@@ -1,0 +1,190 @@
+(footprint "BusBar_5x2mm_L90"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Flat copper busbar 5 x 2 mm, 90 mm long, soldered flat onto exposed copper (hotplate)")
+	(tags "busbar copper bar high current")
+	(property "Reference" "BB**"
+		(at 0 -4.1 0)
+		(layer "F.SilkS")
+		(uuid "8e33b3ae-c97b-4e44-a94c-f9192ee7d3a5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "BusBar_5x2mm_L90"
+		(at 0 4.1 0)
+		(layer "F.Fab")
+		(uuid "69d7dc7e-5187-4df3-88ed-1ea22b50e0dd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "40845701-365c-413e-b4ab-41df7d74bfba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Flat copper busbar 5 x 2 mm, 90 mm long, soldered to exposed copper"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5bca62aa-a6fd-4343-8fd5-7935f185bcdf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -45 -2.5)
+		(end 45 2.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a5499702-eb81-4a72-ae94-196c160e7026")
+	)
+	(fp_rect
+		(start -45 -2.5)
+		(end 45 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "5c51b1ed-4597-41bf-84ba-778de071f153")
+	)
+	(pad "" smd rect
+		(at -42 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "8734e086-45d7-46a8-87a0-7699d8f4fa7f")
+	)
+	(pad "" smd rect
+		(at -36 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "54a1abfb-2873-459d-bd4f-fe85787d94d0")
+	)
+	(pad "" smd rect
+		(at -30 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "7545cba5-03de-4313-86e5-040eaa0a8249")
+	)
+	(pad "" smd rect
+		(at -24 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "5273502c-75eb-4e57-ba29-580a4cb72c32")
+	)
+	(pad "" smd rect
+		(at -18 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "cc687000-9e78-4cb3-b5ad-24c1fb366d1d")
+	)
+	(pad "" smd rect
+		(at -12 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "493f73d0-65af-4f0d-9200-18a5545ff0c9")
+	)
+	(pad "" smd rect
+		(at -6 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "1405cf88-50a7-4c34-b82a-43cbba8c9e27")
+	)
+	(pad "" smd rect
+		(at 0 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "b07c111a-0756-434d-bedd-cf9256f3b6bc")
+	)
+	(pad "" smd rect
+		(at 6 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "afccaf91-c424-475c-8ad9-d1cbba9396c6")
+	)
+	(pad "" smd rect
+		(at 12 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "2c4d897f-6ce0-48de-a792-d2d8468cc2e8")
+	)
+	(pad "" smd rect
+		(at 18 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "0ade6ad3-6711-4adf-bdc9-eabfe79c3183")
+	)
+	(pad "" smd rect
+		(at 24 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "8fd28504-eabc-4532-96e4-5ca1f2f01651")
+	)
+	(pad "" smd rect
+		(at 30 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "9f8c0248-b847-41ce-96d4-279ab7e85ea4")
+	)
+	(pad "" smd rect
+		(at 36 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "1b888dfe-f5ac-4c33-a970-9d4e7dbacfaf")
+	)
+	(pad "" smd rect
+		(at 42 0)
+		(size 4 3.6)
+		(layers "F.Paste")
+		(uuid "9bee03ed-354d-4b26-ae1d-34b87f176cb5")
+	)
+	(pad "1" smd rect
+		(at 0 0)
+		(size 90 5)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.05)
+		(thermal_bridge_width 0.5)
+		(uuid "f4226f9c-6938-4c1f-8275-5ad3873787dd")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/BusBar_5x2mm_L90.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
