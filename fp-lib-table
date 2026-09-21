@@ -1,4 +1,5 @@
 (fp_lib_table
-  (version 7)
-  (lib (name "GigaVescLibs")(type "KiCad")(uri "A:/Projects/Electronic/GigaESC/GigaVescLibs.pretty")(options "")(descr ""))
+	(version 7)
+	(lib (name "GigaVescLibs") (type "KiCad") (uri "C:/Projects/Personal/Electronic/GigaESC/GigaVescLibs.pretty") (options "") (descr ""))
+	(lib (name "GigaDFN56") (type "KiCad") (uri "${KIPRJMOD}/GigaDFN56.pretty") (options "") (descr "project footprints"))
 )

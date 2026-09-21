@@ -1,4 +1,5 @@
 (sym_lib_table
-  (version 7)
-  (lib (name "GigaVescSymbols")(type "KiCad")(uri "A:/Projects/Electronic/GigaESC/GigaESCSymbols.kicad_sym")(options "")(descr ""))
+	(version 7)
+	(lib (name "GigaVescSymbols") (type "KiCad") (uri "C:/Projects/Personal/Electronic/GigaESC/GigaESCSymbols.kicad_sym") (options "") (descr ""))
+	(lib (name "GigaDFN56") (type "KiCad") (uri "${KIPRJMOD}/GigaDFN56.kicad_sym") (options "") (descr "project symbols"))
 )
