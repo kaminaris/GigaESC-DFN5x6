@@ -1,0 +1,62 @@
+(version 1)
+# 200 V platform.
+#
+# Netclass clearance (Board Setup > Net Classes) is the OUTER-layer figure for HV copper
+# against low-voltage copper:  HV_BUS / HV_PHASE* = 2 mm,  HV_DIV_150V = 1.6 mm,
+# HV_DIV_75V = 0.65 mm.  That figure is what keeps the bus and the switch nodes away from
+# the control side: the card headers, the signal connectors and the current-sense block.
+#
+# The rules below relax the cases where component geometry, not insulation, sets the gap.
+# Later rules take precedence, so they run from general to specific.
+# Divider bounds assume the present resistor ratios and a 200 V DC bus.
+# This is not an insulation certification.
+
+(rule "HV inner-layer spacing"
+  # Inner layers are enclosed by laminate; IPC-2221 B1 asks far less than an outer layer.
+  (layer inner)
+  (condition "(A.hasNetclass('HV_BUS') || A.hasNetclass('HV_PHASE1') || A.hasNetclass('HV_PHASE2') || A.hasNetclass('HV_PHASE3') || A.hasNetclass('HV_DIV_150V') || A.hasNetclass('HV_DIV_75V')) || (B.hasNetclass('HV_BUS') || B.hasNetclass('HV_PHASE1') || B.hasNetclass('HV_PHASE2') || B.hasNetclass('HV_PHASE3') || B.hasNetclass('HV_DIV_150V') || B.hasNetclass('HV_DIV_75V'))")
+  (constraint clearance (min 0.3mm)))
+
+(rule "HV to low voltage inside the power stage"
+  # Inside the power stage the gap is set by the FET, driver and lug footprints: gate and
+  # bootstrap nets must reach pins 1.27 mm from the switch node. Outside this area the
+  # netclass figure applies.
+  (condition "(A.hasNetclass('HV_BUS') || A.hasNetclass('HV_PHASE1') || A.hasNetclass('HV_PHASE2') || A.hasNetclass('HV_PHASE3')) && A.insideArea('POWER_STAGE') && B.insideArea('POWER_STAGE')")
+  (constraint clearance (min 0.4mm)))
+
+(rule "HV to power return"
+  # Set by the FET, bus-cap and shunt footprints. 0.4 mm is the IPC-2221 B4 figure for
+  # 200 V under solder mask.
+  (condition "(A.hasNetclass('HV_BUS') || A.hasNetclass('HV_PHASE1') || A.hasNetclass('HV_PHASE2') || A.hasNetclass('HV_PHASE3')) && (B.NetName == 'GND' || B.hasNetclass('GND'))")
+  (constraint clearance (min 0.4mm)))
+
+(rule "HV across domains"
+  # +BATT against a phase node sits across the FET package; phase against phase is set by
+  # the bus-cap and lug geometry.
+  (condition "(A.hasNetclass('HV_BUS') || A.hasNetclass('HV_PHASE1') || A.hasNetclass('HV_PHASE2') || A.hasNetclass('HV_PHASE3')) && (B.hasNetclass('HV_BUS') || B.hasNetclass('HV_PHASE1') || B.hasNetclass('HV_PHASE2') || B.hasNetclass('HV_PHASE3'))")
+  (constraint clearance (min 0.4mm)))
+
+(rule "Divider chain spacing"
+  # Series taps sit across one resistor body; the part, not the copper, holds off the volts.
+  (condition "(A.hasNetclass('HV_DIV_150V') || A.hasNetclass('HV_DIV_75V')) && (B.hasNetclass('HV_BUS') || B.hasNetclass('HV_PHASE1') || B.hasNetclass('HV_PHASE2') || B.hasNetclass('HV_PHASE3') || B.hasNetclass('HV_DIV_150V') || B.hasNetclass('HV_DIV_75V') || B.NetName == 'GND' || B.hasNetclass('GND'))")
+  (constraint clearance (min 0.4mm)))
+
+(rule "Within HV_BUS"
+  (condition "A.hasNetclass('HV_BUS') && B.hasNetclass('HV_BUS')")
+  (constraint clearance (min 0.15mm)))
+
+(rule "Within HV_PHASE1"
+  (condition "A.hasNetclass('HV_PHASE1') && B.hasNetclass('HV_PHASE1')")
+  (constraint clearance (min 0.15mm)))
+
+(rule "Within HV_PHASE2"
+  (condition "A.hasNetclass('HV_PHASE2') && B.hasNetclass('HV_PHASE2')")
+  (constraint clearance (min 0.15mm)))
+
+(rule "Within HV_PHASE3"
+  (condition "A.hasNetclass('HV_PHASE3') && B.hasNetclass('HV_PHASE3')")
+  (constraint clearance (min 0.15mm)))
+
+(rule "HV to board edge"
+  (condition "A.hasNetclass('HV_BUS') || A.hasNetclass('HV_PHASE1') || A.hasNetclass('HV_PHASE2') || A.hasNetclass('HV_PHASE3')")
+  (constraint edge_clearance (min 0.5mm)))

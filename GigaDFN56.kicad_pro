@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.2,
-          "height": 2.4,
-          "width": 2.4
+          "drill": 0.5,
+          "height": 0.85,
+          "width": 0.85
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.35,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 2,
@@ -966,32 +966,32 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 1.0,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2934,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "CurrentSense",
-        "pcb_color": "rgb(0, 194, 194)",
+        "name": "HV_BUS",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.5,
         "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 1.6,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2934,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "GND",
-        "pcb_color": "rgb(132, 132, 132)",
+        "name": "HV_DIV_150V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
@@ -1002,13 +1002,13 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.65,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2934,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "Hall",
+        "name": "HV_DIV_75V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -1020,38 +1020,20 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 2.0,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2934,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "JTAG",
+        "name": "HV_PHASE1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.5,
         "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.15,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2934,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Power",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       }
     ],
@@ -1062,28 +1044,8 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Power",
-        "pattern": "+*V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "+*REF"
-      },
-      {
-        "netclass": "Hall",
-        "pattern": "HALL(\\d+)(.*)"
-      },
-      {
-        "netclass": "CurrentSense",
-        "pattern": "CURR*"
-      },
-      {
-        "netclass": "GND",
-        "pattern": "GND*"
-      },
-      {
-        "netclass": "JTAG",
-        "pattern": "SWDIO|SWO|SWCLK|NRST"
+        "netclass": "HV_BUS",
+        "pattern": "+BATT"
       }
     ]
   },
