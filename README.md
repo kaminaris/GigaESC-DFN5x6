@@ -4,8 +4,6 @@ Compact, modular three-phase ESC power board for the GigaESC project. Designed i
 
 ## Board views
 
-AI-generated photorealistic visualizations based on the PCB renders; copper busbars shown in copper finish. Refer to the KiCad files for exact geometry.
-
 ![GigaDFN56 top view with control and power-supply modules](docs/images/gigadfn56-top-render.png)
 
 ![GigaDFN56 bottom view with MOSFETs and copper busbar](docs/images/gigadfn56-bottom-render.png)
