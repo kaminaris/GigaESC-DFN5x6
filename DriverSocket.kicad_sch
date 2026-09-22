@@ -4071,8 +4071,8 @@
 		)
 		(uuid "e96eab88-82bc-47aa-b85c-6979f23f6956")
 	)
-	(global_label "POWER STAGE LOCKOUT"
-		(shape input)
+	(global_label "POWER-STAGE-LOCKOUT"
+		(shape output)
 		(at 45.72 73.66 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4117,8 +4117,8 @@
 		)
 		(uuid "52ba5855-0e82-435c-97ae-9b6d0d9340f7")
 	)
-	(hierarchical_label "V SENSE"
-		(shape input)
+	(hierarchical_label "V-SENSE"
+		(shape output)
 		(at 273.05 133.35 0)
 		(effects
 			(font
@@ -4151,7 +4151,7 @@
 		(uuid "d85cd507-aeca-4a5b-a458-fa0812e0f5ba")
 	)
 	(hierarchical_label "MOS_TEMP"
-		(shape input)
+		(shape output)
 		(at 189.23 82.55 0)
 		(effects
 			(font
@@ -11653,7 +11653,7 @@
 				(justify left top)
 			)
 		)
-		(pin "PHASE" input
+		(pin "PHASE" passive
 			(at 104.14 143.51 270)
 			(uuid "4cd19756-fad0-4eae-b4b1-7860bae0aaaf")
 			(effects
@@ -11764,7 +11764,7 @@
 				(justify left top)
 			)
 		)
-		(pin "PHASE" input
+		(pin "PHASE" passive
 			(at 48.26 143.51 270)
 			(uuid "39d946cc-3336-4049-b11b-a49604c51735")
 			(effects
@@ -11875,7 +11875,7 @@
 				(justify left top)
 			)
 		)
-		(pin "PHASE" input
+		(pin "PHASE" passive
 			(at 132.08 143.51 270)
 			(uuid "6c69788a-8d2b-4a62-8579-7665327c455a")
 			(effects
@@ -11986,7 +11986,7 @@
 				(justify left top)
 			)
 		)
-		(pin "PHASE" input
+		(pin "PHASE" passive
 			(at 76.2 143.51 270)
 			(uuid "482105b1-1e00-4b7e-8485-7371bc699984")
 			(effects

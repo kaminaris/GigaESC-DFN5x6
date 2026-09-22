@@ -700,7 +700,7 @@
 		)
 		(uuid "82326a89-10cc-45ea-8ac7-3a0ca55967d9")
 	)
-	(global_label "POWER STAGE DISABLE"
+	(global_label "POWER-STAGE-DISABLE"
 		(shape input)
 		(at 152.4 77.47 180)
 		(fields_autoplaced yes)
@@ -724,8 +724,8 @@
 			)
 		)
 	)
-	(global_label "POWER STAGE LOCKOUT"
-		(shape input)
+	(global_label "POWER-STAGE-LOCKOUT"
+		(shape output)
 		(at 166.37 50.8 0)
 		(fields_autoplaced yes)
 		(effects
@@ -748,7 +748,7 @@
 			)
 		)
 	)
-	(global_label "POWER STAGE DISABLE"
+	(global_label "POWER-STAGE-DISABLE"
 		(shape input)
 		(at 148.59 50.8 180)
 		(fields_autoplaced yes)

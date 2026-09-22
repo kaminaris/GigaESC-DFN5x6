@@ -1009,23 +1009,43 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 86.36) (xy 130.81 86.36)
+			(xy 97.79 86.36) (xy 116.84 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6fc5d1c3-ddc9-4982-863f-8aeb4594c688")
+		(uuid "53aef2b5-2c01-442b-8db7-3cf61c51579a")
 	)
 	(wire
 		(pts
-			(xy 97.79 111.76) (xy 130.81 111.76)
+			(xy 124.46 86.36) (xy 130.81 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "77895f32-92d3-424e-b98c-f9a16cbd5626")
+		(uuid "16726253-8ee5-4a2c-8a7e-fec678374e91")
+	)
+	(wire
+		(pts
+			(xy 97.79 111.76) (xy 116.84 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a36fc684-a8d6-49e0-ae08-1c8918029210")
+	)
+	(wire
+		(pts
+			(xy 124.46 111.76) (xy 130.81 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1decbc59-1140-447c-a011-d18317cc98e7")
 	)
 	(wire
 		(pts
@@ -1191,7 +1211,7 @@
 		(uuid "1fcd243c-5617-4bf0-8c7e-3300da136196")
 	)
 	(hierarchical_label "PHASE"
-		(shape input)
+		(shape passive)
 		(at 97.79 99.06 180)
 		(effects
 			(font
@@ -2891,6 +2911,278 @@
 				)
 				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/d3d3a06e-f81d-4927-9a88-9ed5502f322c/fe8d3dbc-6080-41e7-8c49-b9e2fc54c8b5"
 					(reference "R212")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 120.65 86.36 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ab98486b-da35-41e0-8287-1c5ee5250be7")
+		(property "Reference" "R4**"
+			(at 125.73 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7"
+			(at 119.38 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GigaDFN56:R_0402_1005Metric_TightCrtYd"
+			(at 120.65 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C25121"
+			(at 120.65 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1fe1e73b-c7ec-4c67-af71-13c6bfc4ed75")
+		)
+		(pin "2"
+			(uuid "8ca9c9b6-b88c-450b-9d0f-a1c1bb63eddc")
+		)
+		(instances
+			(project "GigaDFN56"
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/d3d3a06e-f81d-4927-9a88-9ed5502f322c/19425a58-22a1-48d1-abf1-a0a64dd74004"
+					(reference "R411")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/d3d3a06e-f81d-4927-9a88-9ed5502f322c/fe8d3dbc-6080-41e7-8c49-b9e2fc54c8b5"
+					(reference "R412")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/d3d3a06e-f81d-4927-9a88-9ed5502f322c/0e83b1d9-5a2a-4686-9c82-b52b6b1e2792"
+					(reference "R413")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/d3d3a06e-f81d-4927-9a88-9ed5502f322c/e5f4164f-aae2-479d-a357-0eb02c130a8b"
+					(reference "R414")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/04d6ed87-6b10-45aa-8255-84943212068b/19425a58-22a1-48d1-abf1-a0a64dd74004"
+					(reference "R421")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/04d6ed87-6b10-45aa-8255-84943212068b/fe8d3dbc-6080-41e7-8c49-b9e2fc54c8b5"
+					(reference "R422")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/04d6ed87-6b10-45aa-8255-84943212068b/0e83b1d9-5a2a-4686-9c82-b52b6b1e2792"
+					(reference "R423")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/04d6ed87-6b10-45aa-8255-84943212068b/e5f4164f-aae2-479d-a357-0eb02c130a8b"
+					(reference "R424")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/693754e5-6fc9-4123-abfe-2e1335cfdb84/19425a58-22a1-48d1-abf1-a0a64dd74004"
+					(reference "R431")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/693754e5-6fc9-4123-abfe-2e1335cfdb84/fe8d3dbc-6080-41e7-8c49-b9e2fc54c8b5"
+					(reference "R432")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/693754e5-6fc9-4123-abfe-2e1335cfdb84/0e83b1d9-5a2a-4686-9c82-b52b6b1e2792"
+					(reference "R433")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/693754e5-6fc9-4123-abfe-2e1335cfdb84/e5f4164f-aae2-479d-a357-0eb02c130a8b"
+					(reference "R434")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 120.65 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "276d9779-4c66-4eea-9c0e-ed1954e30bd2")
+		(property "Reference" "R5**"
+			(at 125.73 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7"
+			(at 119.38 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GigaDFN56:R_0402_1005Metric_TightCrtYd"
+			(at 120.65 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C25121"
+			(at 120.65 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "81238488-86b9-472a-943a-188664551b73")
+		)
+		(pin "2"
+			(uuid "aee7726e-194b-4eb6-b589-c80529e44eaf")
+		)
+		(instances
+			(project "GigaDFN56"
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/d3d3a06e-f81d-4927-9a88-9ed5502f322c/19425a58-22a1-48d1-abf1-a0a64dd74004"
+					(reference "R511")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/d3d3a06e-f81d-4927-9a88-9ed5502f322c/fe8d3dbc-6080-41e7-8c49-b9e2fc54c8b5"
+					(reference "R512")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/d3d3a06e-f81d-4927-9a88-9ed5502f322c/0e83b1d9-5a2a-4686-9c82-b52b6b1e2792"
+					(reference "R513")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/d3d3a06e-f81d-4927-9a88-9ed5502f322c/e5f4164f-aae2-479d-a357-0eb02c130a8b"
+					(reference "R514")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/04d6ed87-6b10-45aa-8255-84943212068b/19425a58-22a1-48d1-abf1-a0a64dd74004"
+					(reference "R521")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/04d6ed87-6b10-45aa-8255-84943212068b/fe8d3dbc-6080-41e7-8c49-b9e2fc54c8b5"
+					(reference "R522")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/04d6ed87-6b10-45aa-8255-84943212068b/0e83b1d9-5a2a-4686-9c82-b52b6b1e2792"
+					(reference "R523")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/04d6ed87-6b10-45aa-8255-84943212068b/e5f4164f-aae2-479d-a357-0eb02c130a8b"
+					(reference "R524")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/693754e5-6fc9-4123-abfe-2e1335cfdb84/19425a58-22a1-48d1-abf1-a0a64dd74004"
+					(reference "R531")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/693754e5-6fc9-4123-abfe-2e1335cfdb84/fe8d3dbc-6080-41e7-8c49-b9e2fc54c8b5"
+					(reference "R532")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/693754e5-6fc9-4123-abfe-2e1335cfdb84/0e83b1d9-5a2a-4686-9c82-b52b6b1e2792"
+					(reference "R533")
+					(unit 1)
+				)
+				(path "/768a484b-8a27-40cf-8cad-0f63935b1af0/693754e5-6fc9-4123-abfe-2e1335cfdb84/e5f4164f-aae2-479d-a357-0eb02c130a8b"
+					(reference "R534")
 					(unit 1)
 				)
 			)
